@@ -12,7 +12,8 @@ private:
 public:
     Samolet() : type(""), obem(""), size(""), cities("") {}
     Samolet(const string& name, const string& tip, const string& V, const string& razmer, const string& towns)
-        : Gruzoperevoz(name), type(tip), obem(V), size(razmer), cities(towns) {}
+        : Gruzoperevoz(name), type(tip), obem(V), size(razmer), cities(towns) {
+    }
 
     void save(ofstream& file) override;
     void load(ifstream& file) override;

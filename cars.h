@@ -12,7 +12,8 @@ private:
 public:
     Cars() : god(""), mark(""), ch(""), volume("") {}
     Cars(const string& name, const string& year, const string& marka, const string& th, const string& volumes)
-        : Gruzoperevoz(name), god(year), mark(marka), ch(th), volume(volumes) {}
+        : Gruzoperevoz(name), god(year), mark(marka), ch(th), volume(volumes) {
+    }
 
     void save(ofstream& file) override;
     void load(ifstream& file) override;

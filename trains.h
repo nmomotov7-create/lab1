@@ -12,7 +12,8 @@ private:
 public:
     Trains() : year(""), trail(""), sum(""), bulk("") {}
     Trains(const string& name, const string& years, const string& traila, const string& suma, const string& bulki)
-        : Gruzoperevoz(name), year(years), trail(traila), sum(suma), bulk(bulki) {}
+        : Gruzoperevoz(name), year(years), trail(traila), sum(suma), bulk(bulki) {
+    }
 
     void save(ofstream& file) override;
     void load(ifstream& file) override;
